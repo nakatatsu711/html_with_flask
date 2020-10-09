@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ヤフオク　残り時間２４時間以内</title>
+  <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+  {% for item in items %}
+  <div class="item">
+    <div class="item-image">
+      <img src="{{ './static/' + item.img_path }}" alt="{{ item.title }}">
+    </div>
+    <div class="item-text">
+      <a href="{{ item.title_url }}">{{ item.title }}</a>
+      <p>{{ item.price }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</body>
+</html>
