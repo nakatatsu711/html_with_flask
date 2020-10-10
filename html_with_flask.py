@@ -1,7 +1,7 @@
 from flask import Flask
 from flask import render_template
 
-import scraping_yahooauc_with_flask
+import scraping_yahooauc
 
 
 app = Flask(__name__)
@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    items = scraping_yahooauc_with_flask.main()
+    items = scraping_yahooauc.main()
     return render_template('index.html', items=items)
 
 
