@@ -20,6 +20,5 @@ Python：3.6.9
 以下を実行して、`http://127.0.0.1:5000/`にアクセスします。
 
 ```
-python scraping_yahooauc.py
 python html_with_flask.py
 ```
