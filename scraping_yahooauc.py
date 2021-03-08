@@ -15,7 +15,7 @@ chromedriver_path = 'ChromeDriverのパス'
 def main():
     '''
     メインの処理
-    残り時間が２４時間以内のオークションを取得
+    残り時間が24時間以内のオークションを取得
     '''
 
     # Webページを取得
@@ -35,7 +35,7 @@ def main():
         time.sleep(1)
         driver.get(next_page[0].get_attribute('href'))
 
-    # ブラウザーを閉じる
+    # ブラウザを閉じる
     driver.quit()
 
     return items
@@ -51,7 +51,7 @@ def get_items(driver, items):
     times = html.cssselect('.Product__time')  # '残り時間'のオブジェクトを取得
     for i in range(item_num):
         if '時間' not in times[i].text:
-            continue  # 入札数が０、残り時間が２４時間以内のオークション以外はcontinue
+            continue  # 入札数が0、残り時間が24時間以内のオークション以外はcontinue
         dict = {}
         dict['title'] = html.cssselect('.Product__titleLink')[i].text.replace('/', '-')  # 商品タイトルを追加
         dict['title_url'] = html.cssselect('.Product__titleLink')[i].get('href')  # 商品タイトルのURLを追加
