@@ -35,7 +35,7 @@ $ pip install -r requirements.txt
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
 [ChromeDriverのダウンロードはこちら](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
-ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。
+ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。  
 そして、`scraping_yahooauc.py`の`chromedriver_path`のところに自分がダウンロードした場所を指定します。
 
 
