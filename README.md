@@ -6,7 +6,7 @@ Flaskで作る小規模なWebアプリです。
 ヤフオクから残り時間が24時間以内のオークションのみを取得します。
 
 オークションの商品情報をスクレイピングします。  
-取得した商品情報をブラウザで見れるように、Flaskを使用してWebアプリ化します。
+取得した商品情報をブラウザで見れるようにWebアプリ化します。
 
 
 
@@ -35,9 +35,10 @@ $ pip install -r requirements.txt
 
 ### ChromeDriverについて
 ブラウザはGoogleChromeを使用します。  
-ブラウザを自動操作するためにChromeDriverを使用します。  
+ブラウザを自動操作するためにChromeDriverを使用します。
+
 以下から自分のGoogleChromeと同じバージョンのドライバーをダウンロードします。  
-[ChromeDriverのダウンロードはこちら](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+[https://sites.google.com/a/chromium.org/chromedriver/downloads](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 
 ChromeDriverをダウンロードしたら解凍して、任意の場所に配置します。  
 そして、`scraping_yahooauc.py`の`chromedriver_path`のところに自分がダウンロードした場所を指定します。
