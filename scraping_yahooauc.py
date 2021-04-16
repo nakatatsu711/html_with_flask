@@ -70,12 +70,12 @@ def get_items(driver, items):
 
 def download_image(img_url, img_path):
     '''
-    オークション画像を取得し、staticフォルダに保存
+    オークション画像を取得し、staticディレクトリに保存
     '''
 
     try:
         data = requests.get(img_url)
-        with open('./static/' + img_path, 'wb') as f:  # staticフォルダに商品タイトルのファイル名で保存
+        with open('./static/' + img_path, 'wb') as f:  # staticディレクトリに商品タイトルのファイル名で保存
             f.write(data.content)
     except Exception:
         print(img_url + 'は取得できませんでした')
