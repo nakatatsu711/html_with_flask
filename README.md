@@ -52,4 +52,4 @@ ChromeDriverをダウンロードしたら解凍して、任意の場所に配�
 $ python html_with_flask.py
 ```
 
-![html-with-flask-1](https://user-images.githubusercontent.com/62325937/128609641-aa0081da-c850-4d57-87d2-5fa2cfd45d86.jpg)
+<img width="300" alt="html-with-flask-1" src="https://user-images.githubusercontent.com/62325937/128609641-aa0081da-c850-4d57-87d2-5fa2cfd45d86.jpg">
